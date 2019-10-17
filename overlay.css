@@ -1,32 +1,33 @@
 .g7-logo {
+    position: absolute;
+    left: 10px;
+    top: 10px;
     width: 200px;
-    position:absolute;
-    left:10px;
-    top:10px;
 }
 
 .command {
+    position:absolute;
+    left: 225px;
+    top: 15px;
+    color: red;
     font-family: 'Consolas';
     font-size: 30px;
-    left: 225px;
-    top: 13px;
-    position:absolute;
-    color:red;
-    font-weight:bold;
+    font-weight: bold;
 }
 
 .box {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 1920px;
+    height: 1080px;
     background-color: aqua;
-    width:1920px;
-    height:1080px;
-    left:0px;
-    position:absolute;
-    top:0px;
 }
 
 .holder {
     position:absolute;
     left: 1550px;
-    top: 1010px;
-    width: 100vw;
+    top: 1012px;
+    width: 370px;
+    height: 70px;
 }
