@@ -1,3 +1,5 @@
 # Not committing this version of TweenMax, as it is the GSock 3.0 Beta.
 lib/TweenMax.min.js
 lib/jquery.js
+lib/SplitText.min.js
+lib/TimelineMax.min.js

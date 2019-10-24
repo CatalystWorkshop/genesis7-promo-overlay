@@ -1,33 +1,59 @@
-.g7-logo {
-    position: absolute;
-    left: 10px;
-    top: 10px;
-    width: 200px;
-}
-
-.command {
-    position:absolute;
-    left: 225px;
-    top: 15px;
-    color: red;
-    font-family: 'Consolas';
-    font-size: 30px;
-    font-weight: bold;
-}
-
 .box {
     position: absolute;
     left: 0px;
     top: 0px;
     width: 1920px;
     height: 1080px;
-    background-color: aqua;
+    background-color: darkcyan;
 }
 
 .holder {
-    position:absolute;
-    left: 1550px;
-    top: 1012px;
-    width: 370px;
-    height: 70px;
+    position: absolute;
+    top: 960px;
+    height: 80px;
+    width: inherit;
+    text-align: right;
+}
+
+.g7-svg {
+    display:inline-block;
+    width:330px;
+    height: inherit;
+    text-align:center;
+    opacity: 0;
+}
+
+.g7-main-svg {
+    height: inherit;
+    width: inherit;
+}
+
+#sheen {
+    height: inherit;
+    width: inherit;
+    position: absolute;
+    top:0;
+    background-image: radial-gradient(
+        circle farthest-side at 0px 0px,
+        rgba(255, 255, 255, 0) 85%,
+        rgba(255, 255, 255, 0.95) 95%,
+        rgba(150, 0, 0, 0.9) 97%,
+        rgba(100, 0, 0, 0) 100%
+        );
+    background-position: -330px 0px;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    clip-path: url(#svg-clip-path);
+}
+
+/************************************************************/
+.command {
+    display: inline-block;
+    color: red;
+    font-family: 'Consolas';
+    font-size: 30px;
+    font-weight: bold;
+    height: auto;
+    width: auto;
+    overflow: hidden;
 }
