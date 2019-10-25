@@ -4,7 +4,7 @@
     top: 0px;
     width: 1920px;
     height: 1080px;
-    background-image: url("./../stream-control-packages/Purdue\ Splat/img/fake-data/splatoon-2-gameplay.jpg");
+    /* background-image: url("./../stream-control-packages/Purdue\ Splat/img/fake-data/splatoon-2-gameplay.jpg"); */
 }
 
 
@@ -14,7 +14,7 @@
     text-align:center;
     opacity: 0;
     position: absolute;
-    top: 980px;
+    top: 945px;
     left: 1670px;
     filter: drop-shadow(white 3px 2px 2px);
 }
