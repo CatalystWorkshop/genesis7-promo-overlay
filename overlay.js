@@ -1,5 +1,5 @@
 $(document).ready(() => {
-    const tl = new TimelineMax({ repeatDelay: 10, repeat: -1 });
+    const tl = new TimelineMax({repeat: -1 });
 
     /* Split Texts for Typewriter Animation */
     let venueSplit = new SplitText(".venue", { type: "words,chars" }),
@@ -11,9 +11,16 @@ $(document).ready(() => {
     let infoSplit = new SplitText(".moreinfo", { type: "words,chars" }),
         infoChars = infoSplit.chars;
 
+    let shineAnimation = () => {return TweenMax.fromTo('#sheen', 2.5, 
+        { backgroundPosition: "-330px 0" 
+        }, {
+            ease: Power3.easeInOut,
+            backgroundPosition: "50px 0"
+        }); 
+        };
 
     // BEGIN REPEAT ANIMATION
-    tl.to(['.g7-svg', '.background-svg'], .8, { opacity: 1, delay: 1 });
+    tl.to(['.g7-svg', '.background-svg'], .8, { opacity: 1 });
 
     tl.from(['.g7-svg', '.background-svg'], .5, {
         y: "+=40",
@@ -23,11 +30,6 @@ $(document).ready(() => {
     // Enter background command
     tl.to(".background-command", 0.17, { opacity: 1, ease: Power1.easeIn }, "+=.25");
 
-    let shineAnimation = () => {return TweenMax.fromTo('#sheen', 2.5, {
-        backgroundPosition: "-330px 0"
-    }, { 
-        ease: Power3.easeInOut,
-        backgroundPosition: "50px 0"}); };
 
     // Date/Time
     tl.staggerFrom(dateChars, 0.01, { opacity: 0, ease: Power1.easeIn }, 0.08, "+=.25");
@@ -54,6 +56,7 @@ $(document).ready(() => {
     tl.add(shineAnimation, "+=0.25"); // works
 
     tl.to(['.g7-svg', '.background-svg'], .4, { opacity: 0, ease: Power1.easeOut }, "+=2");
+    tl.to({}, 10, {}); // Wait 5s
 
     // END REPEAT ANIMATION
 
