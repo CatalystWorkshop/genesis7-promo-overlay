@@ -4,7 +4,7 @@
     top: 0px;
     width: 1920px;
     height: 1080px;
-    /* background-image: url("./../stream-control-packages/Purdue\ Splat/img/fake-data/splatoon-2-gameplay.jpg"); */
+    background-image: url("./../stream-control-packages/Purdue\ Splat/img/fake-data/splatoon-2-gameplay.jpg");
 }
 
 
@@ -14,9 +14,9 @@
     text-align:center;
     opacity: 0;
     position: absolute;
-    top: 945px;
+    top: 910px;
     left: 1670px;
-    filter: drop-shadow(white 3px 2px 2px);
+    /* filter: drop-shadow(white 3px 2px 2px); */
 }
 
 .g7-main-svg {
@@ -44,8 +44,8 @@
 
 /************************************************************/
 .command {
-    color: red;
-    text-shadow: black 1px 1px 1px;
+    color: white;
+    /* text-shadow: white 1px 1px 1px; */
     font-size: 30px;
     height: auto;
     width: 275px;
@@ -56,5 +56,25 @@
     text-align: center;
     left: 1630px;
     position: absolute;
-    top: 1035px;
+    top: 1010px;
+}
+
+.background-command {
+    position: absolute;
+    top: 1014px;
+    left: 1656px;
+    width: 228px;
+    height: 35px;
+    background-color: rgba(0,0,0,0.8);
+    opacity: 0;
+}
+
+.background-svg {
+    position: absolute;
+    top: 902px;
+    left: 1656px;
+    width: 228px;
+    height: 69px;
+    background-color: rgba(0,0,0,0.8);
+    opacity: 0;
 }

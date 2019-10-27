@@ -3,37 +3,41 @@
 
 <head>
     <link href="./overlay.css" rel="stylesheet">
+    <script type="text/javascript" src="./lib/jquery.js"></script>
     <script type="text/javascript" src="./lib/TimelineMax.min.js"></script>
     <script type="text/javascript" src="./lib/TweenMax.min.js"></script>
     <script type="text/javascript" src="./lib/SplitText.min.js"></script>
-    <script type="text/javascript" src="./lib/jquery.js"></script>
     <script type="text/javascript" src="./overlay.js"></script>
+    <script type="text/javascript" src="./overlay.js"> </script>
     <link rel="stylesheet" href="https://use.typekit.net/zck7hii.css">
     <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
-    <script type="text/javascript" src="./overlay.js"> </script>
     <link href="./overlay.css" rel="stylesheet">
 
 </head>
 
 <body>
     <div class="box">
+        <div class="background-svg"></div>
         <div class="g7-svg">
             <img class="g7-main-svg" src="./g7-horizontal-path-logo.svg" />
             <div id="sheen"></div>
         </div>
+        <div class="background-command"></div>
         <div class="command date">January 24-26, 2020</div>
         <div class="command venue">Oakland, CA</div>
-        <div class=" command moreinfo">!g7 for more info</div>
+        <div class="command moreinfo">!g7 for more info</div>
     </div>
-    <svg id="g7-mask-svg">
+    <svg id="g7-mask-svg" viewBox="0 0 330 80">
         <defs>
-            <clipPath id="svg-clip-path">
+            <clipPath 
+                id="svg-clip-path" 
+                clipPathUnits="objectBoundingBox"
+                transform="scale(0.0030303 0.0125)">
                 <path
                     d="M160 30 30 30 30 50 140 50 140 60 20 60 20 20 160 20 160 0 10 0 0 10 0 70 10 80 160 80 160 30z" />
                 <path d="M170 10 180 20 310 20 310 30 270 70 270 80 290 80 330 40 330 10 320 0 170 0 170 10z" />
             </clipPath>
         </defs>
-
     </svg>
 
 </body>
