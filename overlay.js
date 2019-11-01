@@ -43,7 +43,7 @@ $(document).ready(() => {
     // More Info
     tl.staggerFrom(infoChars, 0.01, { opacity: 0, ease: Power1.easeIn }, 0.08, "+=.25");
     tl.add(shineAnimation, "+=0.25"); // works
-    tl.staggerTo(infoChars, 0.01, { opacity: 0, ease: Power1.easeOut }, -0.08, "+=3");
+    tl.staggerTo(infoChars, 0.01, { opacity: 0, ease: Power1.easeOut }, -0.08, "+=8");
 
     // Exit Command Background
     tl.to(".background-command", 0.17, { opacity: 0, ease: Power1.easeOut }, "+=0.05");
@@ -56,7 +56,7 @@ $(document).ready(() => {
     tl.add(shineAnimation, "+=0.25"); // works
 
     tl.to(['.g7-svg', '.background-svg'], .4, { opacity: 0, ease: Power1.easeOut }, "+=2");
-    tl.to({}, 10, {}); // Wait 5s
+    tl.to({}, 180, {}); // Wait 5s
 
     // END REPEAT ANIMATION
 
